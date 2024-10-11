@@ -1,0 +1,30 @@
+/* profile.css */
+
+.profile {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .profile h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .profile p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .profile ul li {
+    background: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,213 @@
+/* Header Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+  }
+  
+  /* Navigation Bar */
+  .header {
+    background-color: #000;
+    padding: 20px 50px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .nav-links {
+    list-style: none;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffcc00;
+  }
+  
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+/* Schedule Section */
+.schedule {
+    padding: 100px 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.schedule h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+/* Schedule Table Styles */
+.schedule-table {
+    width: 100%;
+    max-width: 1200px; /* Increased max-width */
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+.schedule-table th {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+.schedule-table tr:nth-child(even) {
+    background-color: #f4f4f4; /* Alternate row colors */
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 100px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Adjusted width */
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    cursor: pointer;
+}
+
+/* Profile Page */
+.profile {
+    padding: 40px; /* Increased padding */
+    background-color: #f8f9fa;
+}
+
+.profile h1 {
+    font-size: 2.5rem; /* Increased title size */
+    margin-bottom: 20px; /* Spacing below title */
+}
+
+.profile p {
+    font-size: 1.2rem;
+    margin-bottom: 10px; /* Spacing below paragraph */
+}
+
+.profile ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile ul li {
+    background: #ffffff;
+    margin: 10px 0; /* Increased spacing between items */
+    padding: 15px; /* Adjusted padding */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Deeper shadow for profile items */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .nav-links li {
+      display: block;
+      margin: 15px 0;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 0.9rem;
+    }
+  }

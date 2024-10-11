@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Premium Gym | Schedule</title>
+  <link rel="stylesheet" href="/public/css/schedule.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">Premium Gym</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="schedule.html">Classes</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Schedule Section -->
+  <section class="schedule">
+    <div class="container">
+      <h1>Class Schedule</h1>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Class</th>
+            <th>Time</th>
+            <th>Trainer</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>Yoga</td>
+              <td>8:00 AM - 9:00 AM</td>
+              <td>John Doe</td>
+              <td><button class="btn book-btn" data-class="Yoga" data-time="8:00 AM" data-trainer="John Doe">Book Now</button></td>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>HIIT</td>
+              <td>6:00 PM - 7:00 PM</td>
+              <td>Jane Smith</td>
+              <td><button class="btn book-btn" data-class="HIIT" data-time="6:00 PM" data-trainer="Jane Smith">Book Now</button></td>
+            </tr>
+            <!-- Repeat for other classes -->
+          </tbody>
+          
+      </table>
+    </div>
+  </section>
+
+  <!-- Modal for Class Details (Optional) -->
+  <div id="class-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Class Details</h2>
+      <p id="class-info">Yoga with John Doe, 8:00 AM - 9:00 AM</p>
+      <p>Duration: 1 Hour</p>
+      <p>Capacity: 20 Participants</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Premium Gym. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script src="/models/schedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Premium Gym | Profile</title>
+  <link rel="stylesheet" href="/public/css/profile.css">
+  <link rel="stylesheet" href="/public/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">Premium Gym</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="schedule.html">Classes</a></li>
+        <li><a href="logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile">
+    <div class="container">
+      <h1>Your Profile</h1>
+      <p>Name: <span id="user-name">John Doe</span></p>
+      <p>Email: <span id="user-email">john@example.com</span></p>
+      <h2>Your Booked Classes</h2>
+      <ul id="booked-classes">
+        <!-- Booked classes will be dynamically populated here -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Premium Gym. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/public/js/main.js"></script>
+  <script src="/public/js/profile.js"></script>
+</body>
+</html>
